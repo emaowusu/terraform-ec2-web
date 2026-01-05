@@ -8,7 +8,7 @@ resource "aws_security_group" "web-sg" {
 
 resource "aws_vpc_security_group_ingress_rule" "allow_ssh_from_my_ip" {
   security_group_id = aws_security_group.web-sg.id
-  cidr_ipv4         = "154.161.32.46/32" # Assign your machine ipv4 address
+  cidr_ipv4         = "your-laptop-public-ip/32" # Assign your machine ipv4 address
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22

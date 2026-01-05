@@ -9,6 +9,9 @@
 - aws cli
 - Python
 - boto3
+  
+### Create the following on your local machine
+
 - Create IAM User and assign access and secret access key to it.
 - Create ssh keys in your project directory
 
