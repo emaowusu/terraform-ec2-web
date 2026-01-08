@@ -1,8 +1,8 @@
 import boto3
 from botocore.exceptions import ClientError
 
-bucket_name = "terra-backend235"  # must be globally unique
-folder_name = "terraform/" 
+bucket_name = "your_unique_bucket_name"  # must be globally unique
+folder_prefix = "your_folder_within_the_bucket/" 
 
 s3 = boto3.client("s3", region_name="us-east-1")
 
@@ -15,5 +15,5 @@ except ClientError as e:
     else:
         raise
 
-s3.put_object(Bucket=bucket_name, Key=folder_name)
-print(f"Folder '{folder_name}' created.")
+s3.put_object(Bucket=bucket_name, Key=folder_prefix)
+print(f"Folder '{folder_prefix}' created.")

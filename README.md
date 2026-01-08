@@ -52,8 +52,18 @@ terraform {
 }
 ```
 
+# Run this command to create the s3 bucket
+
 ```bash
 python create_s3.py
+```
+
+# Run the commands below to apply the `backend.tf` file
+
+```bash
+terraform validate
+terraform plan
+terraform apply
 ```
 
 ### Clean up

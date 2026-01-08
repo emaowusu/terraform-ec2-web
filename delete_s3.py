@@ -1,8 +1,8 @@
 import boto3
 from botocore.exceptions import ClientError
 
-bucket_name = "terra-backend235"  # must be globally unique
-folder_prefix = "terraform/" 
+bucket_name = "your_unique_bucket_name"  # must be globally unique
+folder_prefix = "your_folder_within_the_bucket/" 
 
 s3 = boto3.resource("s3")
 bucket = s3.Bucket(bucket_name)
