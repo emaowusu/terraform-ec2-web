@@ -1,6 +1,7 @@
 .terraform
-*.lock.hcl
+*.terraform.lock.hcl
 *.tfstate
 webKey*
 *.txt
 *.tfstate.backup
+backend.tf
